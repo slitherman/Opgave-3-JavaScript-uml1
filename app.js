@@ -27,7 +27,7 @@ const app = Vue.createApp({
         if (this.inputMessage.length <= 0) {
           alert("Please write something");
         }
-        this.outputMessage = this.wordLowercase();
+        this.outputMessage =  this.wordLowercase();
         this.outputMessage += " " + this.wordUppercase();
         this.outputMessage += " " + this.capitalizedFirstLetter();
         this.outputMessage += " " + this.capitalizeLastLetter();
@@ -55,6 +55,7 @@ const app = Vue.createApp({
           randomArr.push(randomChar);
         }
         this.outputMessage += " " + randomArr.join("");
+        
       },
     },
   });
